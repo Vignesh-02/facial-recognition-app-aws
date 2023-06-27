@@ -40,13 +40,14 @@ const Register = () => {
 
   return (
     <div className='App'>
-            <form onSubmit={sendImage}> 
+            <form onSubmit={sendImage}>
+                
                 <input type='file' name='image' onChange={e => setImage(e.target.files[0])}></input>
                 <button type='submit'>Upload</button>
             </form>
             <h2> Make sure to name your image as 'John_Doe.jpeg' </h2>
             <div className={isAuth ? 'success' : 'failure'}>{uploadResultMessage}</div>
-            
+            <h3>Please wait while the image is getting uploaded</h3>
     </div>
   )
 }

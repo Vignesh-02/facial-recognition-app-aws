@@ -65,7 +65,7 @@ function Authenticate() {
                 <button type='submit'>Authenticate</button>
             </form>
             <div className={isAuth ? 'success' : 'failure'}>{uploadResultMessage}</div>
-            
+            <h3>Please wait while the image is getting uploaded</h3>
         </div>
     )
 }
