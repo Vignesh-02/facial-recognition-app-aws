@@ -7,12 +7,10 @@ function App() {
 
   return (
     <div className='App'>
-        <Router>
             <Routes>
-                <Route path='/' element={<Authenticate />}></Route>
+                <Route path='/*' element={<Authenticate />}></Route>
                 <Route path='/register' element={<Register />}></Route>
             </Routes>
-        </Router>
     </div>
   )
 }
