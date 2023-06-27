@@ -45,9 +45,7 @@ const Register = () => {
                 <button type='submit'>Upload</button>
             </form>
             <div className={isAuth ? 'success' : 'failure'}>{uploadResultMessage}</div>
-            <img src={require(`./employees/${imgName}`)} alt='visitor'
-                 height={250} width={250}
-            />
+            
     </div>
   )
 }
